@@ -1,7 +1,7 @@
 sudo docker-compose up -d --build
 
-python3 src/setup_mongodb.py
+docker exec -it fit3182-pyspark-1 python /home/student/src/setup_mongodb.py
 
-python3 src/streaming_app.py
+docker exec -it fit3182-pyspark-1 python /home/student/src/streaming_app.py
 
-python3 src/producer.py
+docker exec -it fit3182-pyspark-1 python /home/student/src/producer.py

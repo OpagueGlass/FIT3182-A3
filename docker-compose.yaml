@@ -44,6 +44,3 @@ services:
       - fit3182-net
     command: jupyter notebook --ip=0.0.0.0 --no-browser --allow-root
     user: "root"
-    build:
-      context: .
-      dockerfile: Dockerfile
