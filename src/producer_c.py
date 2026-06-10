@@ -1,4 +1,4 @@
-from producer_utils import start_producer
+from producer import start_producer
 FILENAME_C = "camera_event_C.csv"
 PRODUCER_ID_C = "C"
 TOPIC_C = "camera-events-C"

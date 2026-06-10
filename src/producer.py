@@ -119,3 +119,20 @@ def start_producer(filename, topic, producer_id):
         sleep(BATCH_SLEEP_SECONDS)
 
     producer.close() # Close the producer connection after all batches have been published
+    
+    
+FILENAME_A = "camera_event_A.csv"
+PRODUCER_ID_A = "A"
+TOPIC_A = "camera-events-A"
+FILENAME_B = "camera_event_B.csv"
+PRODUCER_ID_B = "B"
+TOPIC_B = "camera-events-B"
+FILENAME_C = "camera_event_C.csv"
+PRODUCER_ID_C = "C"
+TOPIC_C = "camera-events-C"
+
+
+if __name__ == "__main__":
+    start_producer(FILENAME_A, TOPIC_A, PRODUCER_ID_A)
+    start_producer(FILENAME_B, TOPIC_B, PRODUCER_ID_B)
+    start_producer(FILENAME_C, TOPIC_C, PRODUCER_ID_C)
