@@ -7,11 +7,9 @@ Step 3: Configure Security Group
 
 Open with Inbound Rules:
 Port	Purpose
-22	SSH
-8080	Spark UI
-3000	Dashboard
-9092	Kafka (optional)
-27017	MongoDB (optional)
+22	SSH (already open by default)
+4040	Spark UI
+27017	MongoDB
 
 Increase storage to 20GB
 
