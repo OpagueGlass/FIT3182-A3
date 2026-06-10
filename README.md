@@ -5,7 +5,7 @@ Download key pair and save as key.pem
 
 Step 3: Configure Security Group
 
-Open:
+Open with Inbound Rules:
 Port	Purpose
 22	SSH
 8080	Spark UI
