@@ -1,7 +1,26 @@
+Ubuntu 24.04 LTS
+2 vCPU
+8GB RAM
+Download key pair and save as key.pem
+
+Step 3: Configure Security Group
+
+Open:
+Port	Purpose
+22	SSH
+8080	Spark UI
+3000	Dashboard
+9092	Kafka (optional)
+27017	MongoDB (optional)
+
+Increase storage to 20GB
+
+SSH into EC2
 ```bash
 ssh -i key.pem ubuntu@<EC2_PUBLIC_IP>
 ```
 
+Install Docker and Docker Compose
 ```bash
 sudo apt update
 sudo apt install docker.io -y
@@ -10,11 +29,19 @@ sudo systemctl enable docker
 sudo systemctl start docker
 ```
 
+Clone the repository
 ```bash
 git clone https://github.com/OpagueGlass/FIT3182-A3.git
 ```
 
+Run the application
 ```bash
 cd FIT3182-A3
 bash start.sh
+```
+
+Git pull for changes
+```bash
+cd FIT3182-A3
+git pull
 ```
