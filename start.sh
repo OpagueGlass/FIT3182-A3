@@ -1,4 +1,4 @@
-sudo docker-compose up -d
+sudo docker-compose up -d --build
 
 python3 src/setup_mongodb.py
 
