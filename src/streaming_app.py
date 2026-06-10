@@ -89,6 +89,7 @@ def main():
         SparkSession.builder
         .master("local[*]")
         .appName("FIT3182 A2 Streaming Join")
+        .config("spark.driver.bindAddress", "0.0.0.0")
         .config("spark.streaming.stopGracefullyOnShutdown", "true")
         .config("spark.sql.shuffle.partitions", "2")
         .getOrCreate()
