@@ -1,7 +1,7 @@
-docker-compose up -d
+sudo docker-compose up -d
 
-python setup_mongodb.py
+python src/setup_mongodb.py
 
-python streaming_app.py
+python src/streaming_app.py
 
-python producer.py
+python src/producer.py
