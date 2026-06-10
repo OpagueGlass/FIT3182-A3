@@ -8,7 +8,7 @@ from kafka3 import KafkaProducer
 
 KAFKA_BOOTSTRAP = "kafka:9092"  # Use docker service name for Kafka bootstrap server
 ENCODING = "utf-8"  # Consistent encoding for reading CSV files and sending messages to Kafka
-BATCH_SLEEP_SECONDS = 1  # Time to sleep between publishing batches
+BATCH_SLEEP_SECONDS = 5  # Time to sleep between publishing batches
 ROOT_DIR = "/home/student/"  # Root directory for docker container
 
 
